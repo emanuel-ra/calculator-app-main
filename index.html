@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Calculator app</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Spartan:wght@700&display=swap" rel="stylesheet">
+  
+  <link href="./css/styles.css" rel="stylesheet">
+
+</head>
+<body class="bg-skin-base font-Spantan">
+    
+    <!-- CALCULATOR -->
+    <div class="m-6 max-w-max mx-auto ">
+
+      <!-- HEADER -->
+      <div class="text-skin-key-accent-1 flex justify-between items-center pb-3">
+        <h1 class="text-2xl">cacl</h1>
+
+        <div class="flex justify-between items-end gap-3 text-xs font-thin tracking-wider">
+          <div class="uppercase">Theme</div>
+          <div id="theme-toggle">
+            <div class="flex justify-around text-xs">
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+            </div>
+            <div id="ball-toggle" class="bg-skin-keypad rounded-full p-1 w-14 cursor-pointer flex ">
+              <div class="rounded-full w-3 h-3 bg-skin-key-accent-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- HEADER END -->
+
+      <!-- SCREEN -->
+      <div class="bg-skin-screen rounded-xl text-3xl text-skin-key-accent-1 p-4 pb-3 text-right" id="screen">399.981</div>
+      <!-- SCREEN END -->
+
+      <!-- KEYPAD -->
+      <div class="bg-skin-keypad rounded-xl grid grid-cols-4 gap-4 p-6 mt-4">
+        <div class="btn btn-base number">7</div>
+        <div class="btn btn-base number">8</div>
+        <div class="btn btn-base number">9</div>
+        <div class="btn btn-accent-1" id="delete-button">DEL</div>
+
+        <div class="btn btn-base number">4</div>
+        <div class="btn btn-base number">5</div>
+        <div class="btn btn-base number">6</div>
+        <div class="btn btn-base operator">+</div>
+
+        <div class="btn btn-base number">1</div>
+        <div class="btn btn-base number">2</div>
+        <div class="btn btn-base number">3</div>
+        <div class="btn btn-base operator">-</div>
+
+        <div class="btn btn-base number">.</div>
+        <div class="btn btn-base number">0</div>
+        <div class="btn btn-base operator">/</div>
+        <div class="btn btn-base operator">x</div>
+
+        <div class="btn-wide btn-accent-1" id="reset-button">RESET</div>
+        <div class="btn-wide btn-accent-2" id="equal-button">=</div>
+
+      </div>
+      <!-- KEYPAD END -->
+      
+    </div>
+    <!-- CALCULATOR END -->
+
+    <!--    theme-2 theme-3 justify-center justify-end  -->
+
+
+    <script type="module" src="./js/app.js"></script>
+    <script type="module" src="./js/calculator.js"></script>
+</body>
+</html>
